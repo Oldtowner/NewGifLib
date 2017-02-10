@@ -21,7 +21,7 @@ public class Category {
     private String name;
 
     @NotNull
-    @Pattern()
+    @Pattern(regexp = "#[0-9a-fA-F]{6}")
     private String colorCode;
     //TODO JW - Whut about the mapped by?
     @OneToMany(mappedBy = "category")
